@@ -1,0 +1,21 @@
+server: 127.0.0.1:8000
+token: demotoken0
+debug: true
+instances: 
+
+  - # test
+    mode: tcp
+    local_host: 127.0.0.1
+    local_port: 22
+    remote_port: 2333
+  - # test2
+    mode: http
+    static: /tmp/test
+    remote_port: 2334
+    domain: test.qwq.ren
+  - # test3
+    mode: http
+    local_host: qwq.ren
+    local_port: 80
+    remote_port: 2334
+    domain: qwq.ren

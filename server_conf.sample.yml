@@ -1,0 +1,5 @@
+port: 8000
+valid_tokens:
+  - demotoken0
+
+debug: true
